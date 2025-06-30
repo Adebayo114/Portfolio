@@ -1,0 +1,21 @@
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: var(--bg); /* dynamic background */
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text);
+  opacity: 0.85; /* slightly muted tone for contrast */
+  max-width: 700px;
+  margin: 0 auto;
+}

@@ -1,0 +1,23 @@
+.about {
+  padding: 4rem 2rem;
+  margin-bottom:5rem;
+  background-color: var(--section-bg); /* lighter or darker depending on theme */
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--text);
+}
+
+.about p {
+  font-size: 1rem;
+  color: var(--text);
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+  opacity: 0.95;
+}

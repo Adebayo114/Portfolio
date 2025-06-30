@@ -1,0 +1,14 @@
+import React from 'react';
+import '../Styles/ResumeButton.css'; // ✅ fix the import path and syntax
+
+function ResumeButton() {
+  return (
+    <div data-aos="fade-up" className="resume-section">
+      <a className="resume-btn" href="/resume.pdf" download>
+        Download Resume
+      </a>
+    </div>
+  );
+}
+
+export default ResumeButton;
