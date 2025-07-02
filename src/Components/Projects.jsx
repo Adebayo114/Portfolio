@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Projects.css';
+import '../Styles/projects.css';
 import dynaquiz from '../assets/quiz.png';
 import flames from '../assets/fg.png';
 import laptop from '../assets/pce.png';
