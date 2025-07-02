@@ -24,7 +24,7 @@ const softSkills = ["Problem-solving", "Communication", "Time management", "Team
 
 export default function Skills() {
   return (
-    <section data-aos="fade-up" className="skills" id="skills">
+    <section data-aos="fade-up" className="skills" id ="skills">
       <h3>Skills</h3>
       <ul className="skills-list">
         {skills.map((skill, i) => (
