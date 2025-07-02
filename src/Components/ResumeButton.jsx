@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/ResumeButton.css'; // ✅ fix the import path and syntax
+import '../Styles/resumebutton.css'; // ✅ fix the import path and syntax
 
 function ResumeButton() {
   return (

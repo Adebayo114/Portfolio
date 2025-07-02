@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Skills.css';
+import '../Styles/skills.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from 'react-icons/fa';
 import { SiVercel, SiFirebase } from 'react-icons/si';
 
