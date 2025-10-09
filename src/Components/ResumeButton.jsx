@@ -1,18 +1,21 @@
-import React from 'react';
-import '../Styles/resumebutton.css'; // make sure your CSS path is correct
+  import React from 'react';
+  import '../Styles/resumebutton.css'; // make sure your CSS path is correct
 
-function ResumeButton() {
-  return (
-    <div data-aos="fade-up" className="resume-section">
-      <a
-        className="resume-btn"
-        href="/Adebayo_Oladayo_CV.pdf" // ✅ use your exact PDF name
-        download="Adebayo_Oladayo_CV.pdf" // optional: renames file on download
-      >
-        Download Resume
-      </a>
-    </div>
-  );
-}
+  function ResumeButton() {
+    return (
+      <div data-aos="fade-up" className="resume-section">
+  <a
+    className="resume-btn"
+    href="/Adebayo_Oladayo_CV.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    download="Adebayo_Oladayo_CV.pdf" // optional, keeps download feature
+  >
+    Download Resume
+  </a>
 
-export default ResumeButton;
+      </div>
+    );
+  }
+
+  export default ResumeButton;
