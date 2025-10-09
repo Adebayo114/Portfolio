@@ -3,15 +3,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--navbar-bg); /* typically set in your theme variables */
+  background: rgba(255, 255, 255, 0.1); /* transparent white for glass effect */
   color: var(--text);
   padding: 1rem 2rem;
-  position: sticky;
+  position: fixed; /* ✅ fixed makes it stay on top during scroll */
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 999;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(12px); /* glass blur */
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional: darker glass when scrolling */
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.6); /* slightly darker when scrolling */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -28,10 +37,11 @@
 
 .nav-links a {
   padding: 1rem 0.5rem;
-  border-bottom: 1px solid transparent;
   color: var(--text);
   text-decoration: none;
+  margin-right:3rem;
   font-size: 1.1rem;
+  border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
@@ -54,18 +64,18 @@
   .menu-icon {
     display: block;
     z-index: 1000;
+    margin-right: 4rem;
   }
 
   .nav-links {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 80px; /* adjust based on navbar height */
+    top: 80px;
     right: 0;
     width: 200px;
     padding: 1rem 2rem;
-    background-color: var(--section-bg);
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 0.5rem 0 0 0.5rem;
     box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.15);
     transform: translateX(100%);
@@ -95,4 +105,3 @@
     border-radius: 4px;
   }
 }
-/* === Dark Mode Styles === */
