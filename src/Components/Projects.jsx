@@ -4,18 +4,30 @@ import dynaquiz from '../assets/quiz.png';
 import flames from '../assets/fg.png';
 import laptop from '../assets/pce.png';
 import anakle from '../assets/anakle.jpg';
+import inviteWave from '../assets/invitewave.png';
+import smoothLaundry from '../assets/laundry.jpg';
 
 const projectList = [
+    {
+    name: "InviteWave",
+    desc: "Event management web app with Firebase auth, event CRUD, and responsive UI.",
+    tech: "React • JavaScript • Firebase • CSS",
+    img: inviteWave,
+    live: "https://www.invitewave.events/",
+    code: "https://github.com/Adebayo114/InviteWave"
+  },
   {
     name: "Dyna Quiz",
     desc: "A quiz app where users can answer tech questions by language and difficulty.",
+    tech: "React • JavaScript • CSS • Vercel",
     img: dynaquiz,
     live: "https://dyna-quiz.vercel.app/",
-    code: "https://github.com/Adebayo114/DynaQuiz"
+    code: "https://github.com/Adebayo114/Dyna-Quiz"
   },
   {
     name: "Flames Game",
     desc: "A fun name-matching game that gives results like 'Lovers', 'Enemies', etc.",
+    tech: "React • CSS • TypeScript • Vercel",
     img: flames,
     live: "https://adebayo114.github.io/Flame-game/",
     code: "https://github.com/Adebayo114/Flame-game"
@@ -23,13 +35,26 @@ const projectList = [
   {
     name: "PC Zone",
     desc: "A sleek frontend e-commerce laptop website with product cards and pricing.",
+    tech: "React • TypeScript • Bootstrap • CSS • Vercel",
     img: laptop,
     live: "https://hng2-hd2j68hww-adebayo114s-projects.vercel.app/",
-    code: "https://github.com/Adebayo114/HNG-frontend-laptop-site"
+    code: "https://github.com/Adebayo114/Pc-Zone"
   },
+
+
+ {
+  name: "Smooth Laundry",
+  desc: "Responsive service-based web application featuring structured UI components, intuitive navigation, and customer-focused layout design.",
+  tech: "React • JavaScript • CSS • Vercel",
+  img: smoothLaundry,
+  live: "https://smooth-laundry.vercel.app/",
+  code: "https://github.com/Adebayo114/Smooth-Laundry"
+},
+
   {
     name: "Anakle",
     desc: "A business/agency website raising awareness for digital services.",
+    tech: "React • JavaScript • Scss • CSS • Vercel",
     img: anakle,
     live: "https://adebayo114.github.io/Anakle/",
     code: "https://github.com/Adebayo114/Anakle"

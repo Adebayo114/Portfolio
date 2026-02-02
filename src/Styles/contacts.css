@@ -1,77 +1,36 @@
-.contact {
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: var(--bg);
-  color: var(--text);
-}
-
-.contact h3 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  .contact {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--bg);
     color: var(--text);
-}
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-.contact p {
-  font-size: 1rem;
-  color: #a8b2d1;
-  margin-bottom: 0.8rem;
-}
+  .contact h3 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    color: var(--text);
+  }
 
-.contact a {
-  color: #64ffda;
-  margin: 0 0.5rem;
-}.contact {
-  padding: 4rem 2rem;
-  text-align: center;
-  background-color: var(--bg);
-  color: var(--text);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  .contact p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    max-width: 650px;
+    margin-inline: auto;
+  }
 
-.contact h3 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: var(--text);
-}
+  .contact a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.2s ease, border-color 0.2s ease;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
 
-.contact p {
-  font-size: 1rem;
-  color: var(--text-secondary, #6c757d); /* fallback if --text-secondary not defined */
-  margin-bottom: 0.8rem;
-  line-height: 1.6;
-  max-width: 600px;
-  margin-inline: auto;
-}
-
-.contact a {
-  color: var(--accent);
-  margin: 0 0.5rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.contact a:hover {
-  color: var(--text);
-  border-bottom: 1px solid var(--accent);
-}
-
-/* Optional: WhatsApp Floating Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  background-color: #25d366;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0.8rem;
-  border-radius: 50%;
-  z-index: 1000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
+  .contact a:hover {
+    opacity: 0.9;
+    border-bottom: 1px solid var(--accent);
+  }

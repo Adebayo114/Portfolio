@@ -8,4 +8,6 @@ export default function Footer() {
       <p>© {new Date().getFullYear()} Adebayo Oladayo Matthew. All rights reserved.</p>
     </footer>
   );
+
 }
+

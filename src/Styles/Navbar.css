@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1); /* transparent white for glass effect */
+  background: rgba(255, 255, 255, 0.006); /* transparent white for glass effect */
   color: var(--text);
   padding: 1rem 2rem;
   position: fixed; /* ✅ fixed makes it stay on top during scroll */
@@ -35,14 +35,12 @@
   gap: 1.5rem;
 }
 
+body { padding-top: 80px; } /* so content doesn’t hide behind navbar */
+
 .nav-links a {
-  padding: 1rem 0.5rem;
-  color: var(--text);
-  text-decoration: none;
-  margin-right:3rem;
-  font-size: 1.1rem;
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s ease;
+  padding: 0.6rem 0.8rem;
+  margin-right: 0; /* remove that 3rem */
+  border-radius: 8px;
 }
 
 .nav-links a:hover {
@@ -104,4 +102,7 @@
     color: var(--bg);
     border-radius: 4px;
   }
+}
+body.light .navbar {
+  background: rgba(255, 255, 255, 0.85);
 }

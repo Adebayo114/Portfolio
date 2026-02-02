@@ -1,23 +1,40 @@
-.about {
-  padding: 4rem 2rem;
-  margin-bottom:5rem;
-  background-color: var(--section-bg); /* lighter or darker depending on theme */
-  color: var(--text);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  .about {
+    padding: 5rem 2rem;
+    background: var(--section-bg);
+    color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
 
-.about h3 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: var(--text);
-}
+  /* ✨ THIS is the floating panel */
+  .about-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(100, 255, 218, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
 
-.about p {
-  font-size: 1rem;
-  color: var(--text);
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.6;
-  opacity: 0.95;
-}
+  /* Headline */
+  .about h3 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  /* Text */
+  .about p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+
+  /* 🌞 LIGHT MODE PANEL STYLE */
+  body.light .about-inner {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }

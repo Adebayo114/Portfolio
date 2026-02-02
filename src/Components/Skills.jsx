@@ -24,8 +24,10 @@ const softSkills = ["Problem-solving", "Communication", "Time management", "Team
 
 export default function Skills() {
   return (
-    <section data-aos="fade-up" className="skills" id ="skills">
-      <h3>Skills</h3>
+      <section data-aos="fade-up" className="skills" id="skills">
+    <h3>Skills</h3>
+
+    <div className="skills-wrap">
       <ul className="skills-list">
         {skills.map((skill, i) => (
           <li key={i}>
@@ -34,6 +36,14 @@ export default function Skills() {
           </li>
         ))}
       </ul>
-    </section>
+
+      <h4 className="soft-title">Soft Skills</h4>
+      <ul className="soft-skills">
+        {softSkills.map((s, i) => <li key={i}>{s}</li>)}
+      </ul>
+    </div>
+  </section>
+
   );
 }
+

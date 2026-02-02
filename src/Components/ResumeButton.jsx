@@ -4,15 +4,10 @@
   function ResumeButton() {
     return (
       <div data-aos="fade-up" className="resume-section">
-  <a
-    className="resume-btn"
-    href="/Adebayo_Oladayo_CV.pdf" // replace with your actual resume path
-    target="_blank"
-    rel="noopener noreferrer"
-    download="Adebayo_Oladayo_CV.pdf" // optional, keeps download feature
-  >
-    Download Resume
-  </a>
+    <a className="resume-btn" href="/Oladayo_Matthew_Adebayo_Software_Engineer_CV.pdf" target="_blank" rel="noopener noreferrer">
+      View Resume (PDF)
+    </a>
+
 
       </div>
     );

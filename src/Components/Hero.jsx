@@ -11,8 +11,16 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         >
+    <section className="hero" id="hero">
+    <div className="hero-inner">
         <h2>Adebayo Oladayo Matthew</h2>
-        <p>Frontend Developer turning ideas into interactive digital experiences.</p>
+        <p>Software Engineer (Frontend Focus) building scalable web apps with React, JavaScript & Firebase.</p>
+    </div>
+    </section>
+
+
+
+
         </section>
     );
     }

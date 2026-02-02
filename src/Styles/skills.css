@@ -1,29 +1,118 @@
-.skills {
-  padding: 4rem 2rem;
-  background-color: var(--section-bg);
-  color: var(--text);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  .skills {
+    padding: 4rem 2rem;
+    background-color: var(--section-bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-.skills h3 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: var(--text);
-}
+  .skills h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text);
+  }
 
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
+  /* Wrapper card to make it feel premium */
+  .skills-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(100, 255, 218, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
 
-.skills-list li {
-  background-color: var(--accent);
-  color: var(--bg); /* flipped for contrast */
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: 500;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  /* Grid = cleaner than flex-wrap for skills */
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1rem;
+  }
+
+  /* Skill card */
+  .skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+
+    background: rgba(10, 25, 47, 0.45);
+    border: 1px solid rgba(100, 255, 218, 0.12);
+
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  }
+
+  .skills-list li:hover {
+    transform: translateY(-3px);
+    border-color: rgba(100, 255, 218, 0.35);
+    background: rgba(10, 25, 47, 0.65);
+  }
+
+  /* Icon in a circle */
+  .skill-icon {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(100, 255, 218, 0.10);
+    border: 1px solid rgba(100, 255, 218, 0.18);
+  }
+
+  /* Skill name */
+  .skills-list li span:last-child {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: var(--text);
+  }
+
+  /* Optional: Soft skills section */
+  .soft-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--text);
+    text-align: center;
+  }
+
+  .soft-skills {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .soft-skills li {
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(100, 255, 218, 0.10);
+    border: 1px solid rgba(100, 255, 218, 0.14);
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* Mobile tweaks */
+  @media (max-width: 768px) {
+    .skills-wrap {
+      padding: 1.1rem;
+    }
+
+    .skills-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .skills-list li {
+      padding: 0.85rem 0.9rem;
+    }
+  }
